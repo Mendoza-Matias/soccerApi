@@ -1,14 +1,13 @@
-package com.mmendoza.soccerApi.entities.dto.exception;
+package com.mmendoza.soccerApi.entities.exceptions.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonRootName;
 import lombok.Builder;
 
 import java.time.LocalDateTime;
 
 @Builder
-public class ErrorResponseDto {
+public class ErrorResponse {
 
     @JsonProperty("message")
     private String message;
