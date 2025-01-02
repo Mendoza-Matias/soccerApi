@@ -1,5 +1,6 @@
 package com.mmendoza.soccerApi.controllers;
 
+import com.mmendoza.soccerApi.entities.dto.labels.CreateLabelDto;
 import com.mmendoza.soccerApi.entities.dto.labels.LabelDto;
 import com.mmendoza.soccerApi.entities.dto.labels.UpdateLabelDto;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +18,7 @@ public interface ILabelController {
     ResponseEntity<LabelDto> getLabelById(@PathVariable Integer labelId);
 
     @PostMapping
-    ResponseEntity<Integer> createdLabel(@RequestBody String label);
+    ResponseEntity<Integer> createdLabel(@RequestBody CreateLabelDto createLabelDto);
 
     @PutMapping
     ResponseEntity<Integer> updateLabel(@RequestBody UpdateLabelDto updateLabelDto);
