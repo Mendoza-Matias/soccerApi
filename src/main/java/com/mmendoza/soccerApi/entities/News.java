@@ -1,6 +1,10 @@
 package com.mmendoza.soccerApi.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.time.LocalDate;
@@ -10,6 +14,10 @@ import java.util.List;
 @Entity
 @Table(name = "news")
 
+@Getter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class News {
 
     @Id
